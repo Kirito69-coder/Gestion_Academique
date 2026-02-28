@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Académique</title>
+    <link rel="stylesheet" href="sheets/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="text-light text-decoration-none navbar-brand mb-0 h1">Plateforme Académique</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 bg-dark text-white min-vh-100 p-3">
+                <div class="nav">
+                    <h5>Menu</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-info">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="etudiants.html" class="nav-link text-info">Etudiants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notes.html" class="nav-link text-info">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="absences.html" class="nav-link text-info">Absences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="statistiques.html" class="nav-link text-info">Statistiques</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-lg-10 p-4">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="fw-bold">Gestion des Étudiants</h2>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addstudent">+ Ajouter Étudiant</button>                    
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 mb-4">
+                    <div class="card-body">
+                        <input type="text" class="form-control" placeholder="Rechercher un étudiant">
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow rounded-4">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Matricule</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Classe</th>
+                                        <th>Moyenne</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>OP001</td>
+                                        <td>HOUSSOU</td>
+                                        <td>Armide</td>
+                                        <td>L2 Sécurité Informatique</td>
+                                        <td><span class="badge bg-success">14.5</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-warning">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>OP002</td>
+                                        <td>YEMANMON</td>
+                                        <td>Bertin</td>
+                                        <td>L1 Ressources humaines</td>
+                                        <td><span class="badge bg-danger">8.5</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-warning">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Modal Ajouter Étudiant -->
+            <div class="modal fade" id="addstudent" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter un étudiant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Prénom</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Classe</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button class="btn btn-primary">Enregistrer</button>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="bg-black text-primary p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Plateforme Académique</h5>
+                    <p class="text-warning">
+                        Système moderne de gestion académique permettant le suivi
+                        des étudiants, des notes et des absences en toute simplicité.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="dashboard.html" class="text-warning">Dashboard</a></li>
+                        <li><a href="etudiants.html" class="text-warning">Étudiants</a></li>
+                        <li><a href="notes.html" class="text-warning">Notes</a></li>
+                        <li><a href="absences.html" class="text-warning">Absences</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p class="text-warning mb-1">Email : adekountekarim12@gmail.com</p>
+                    <p class="text-warning">Localisation : Porto-Novo, Bénin</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+            <div class="text-center">
+                <small class="text-warning">© 2026 Plateforme Académique</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sheets/bootstrap.bundle.js"></script>
+</body>
+</html>

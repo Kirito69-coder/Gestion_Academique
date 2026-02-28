@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Académique</title>
+    <link rel="stylesheet" href="sheets/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="text-light text-decoration-none navbar-brand mb-0 h1">Plateforme Académique</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 bg-dark text-white min-vh-100 p-3">
+                <div class="nav">
+                    <h5>Menu</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-info">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="etudiants.html" class="nav-link text-info">Etudiants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notes.html" class="nav-link text-info">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="absences.html" class="nav-link text-info">Absences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="statistiques.html" class="nav-link text-info">Statistiques</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 p-4">
+                <h4 class="text-info">Bienvenue sur la plateforme de gestion académique</h4>
+                <Section class="p-4 m-3 rounded-4 bg-light">
+                    <h2 class="fw-bold">Dashboard</h2>
+                    <p class="text-muted text-end">Année académique 2025-2026</p>
+
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card text-white shadow rounded-4 border-0 text-center">
+                                <div class="card-body text-dark">
+                                    <h6>Total étudiants</h6>
+                                    <h3 class="fw-bold">210</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card text-white shadow rounded-4 border-0 text-center">
+                                <div class="card-body text-success">
+                                    <h6>Moyenne Générale</h6>
+                                    <h3 class="fw-bold">13.5</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <div class="card text-white shadow rounded-4 border-0 text-center">
+                                <div class="card-body text-danger">
+                                    <h6>Taux d'absences</h6>
+                                    <h3 class="fw-bold">12%</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm rounded-4 mt-5">
+                        <div class="card-body">
+                            <h3 class="fw-bold mb-3">Progression Académique</h3>
+                            <p class="mb-1">Réussite</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" style="width: 75%;"></div>
+                            </div>
+                            <p class="mb-1">En difficulté</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" style="width: 18%;"></div>
+                            </div>
+                            <p class="mb-1">Échec</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-danger" style="width: 7%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </Section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-primary p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Plateforme Académique</h5>
+                    <p class="text-warning">
+                        Système moderne de gestion académique permettant le suivi
+                        des étudiants, des notes et des absences en toute simplicité.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="dashboard.html" class="text-warning">Dashboard</a></li>
+                        <li><a href="etudiants.html" class="text-warning">Étudiants</a></li>
+                        <li><a href="notes.html" class="text-warning">Notes</a></li>
+                        <li><a href="absences.html" class="text-warning">Absences</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p class="text-warning mb-1">Email : adekountekarim12@gmail.com</p>
+                    <p class="text-warning">Localisation : Porto-Novo, Bénin</p>
+                </div>
+            </div>
+
+            <hr class="border-secondary">
+            <div class="text-center">
+                <small class="text-warning">© 2026 Plateforme Académique</small>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="sheets/bootstrap.bundle.js"></script>
+</body>
+</html>
